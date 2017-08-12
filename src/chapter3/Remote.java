@@ -1,5 +1,4 @@
-package chapter2.dogDoors;
-
+package chapter3;
 
 public class Remote {
     private DogDoor dogDoor;
@@ -8,12 +7,12 @@ public class Remote {
         this.dogDoor = dogDoor;
     }
 
-    public void pressButton(){
+    public void pressButton() {
         System.out.println("Pressing the remote control button...");
-        if(dogDoor.isOpen()){
+        if (dogDoor.isOpen()) {
             dogDoor.close();
-        }else{
-            dogDoor.oper();
+        } else {
+            dogDoor.open();
         }
     }
 }
