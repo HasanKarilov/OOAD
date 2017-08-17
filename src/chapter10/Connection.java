@@ -21,4 +21,10 @@ public class Connection {
     public String getConnectionName() {
         return connectionName;
     }
+
+
+    public String toString()
+    {
+        return "[" + station1.getStationName() + ", " + station2.getStationName() + ", " + connectionName + "]";
+    }
 }
